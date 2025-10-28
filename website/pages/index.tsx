@@ -22,16 +22,10 @@ export default function Home() {
             width="105px"
             height="93px"
           />
-          <div>
-            <a href="/" className="px-4">
-              Instagram
-            </a>
-            <a href="/about" className="px-4">
-              AirBNB
-            </a>
-            <a href="/gallery" className="px-4">
-              Contact
-            </a>
+          <div className="flex gap-x-4">
+            <a href="/">Instagram</a>
+            <a href="/about">AirBNB</a>
+            <a href="/gallery">Contact</a>
           </div>
         </div>
       </nav>
@@ -135,18 +129,12 @@ export default function Home() {
             height="93px"
           />
           <div>
-            <div>
-              <a href="/" className="px-4">
-                Instagram
-              </a>
-              <a href="/about" className="px-4">
-                AirBNB
-              </a>
-              <a href="/gallery" className="px-4">
-                Contact
-              </a>
+            <div className="flex justify-end gap-x-4">
+              <a href="/">Instagram</a>
+              <a href="/about">AirBNB</a>
+              <a href="/gallery">Contact</a>
             </div>
-            <p>© 2024 The Silver Clam. All rights reserved.</p>
+            <p>2024 The Silver Clam. All rights reserved.</p>
           </div>
         </div>
       </footer>
