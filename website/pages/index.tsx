@@ -230,7 +230,7 @@ export default function Home() {
       {/* Gallery Section */}
       <section>
         <div className="mx-auto p-4 md:p-8">
-          <h2 className="text-[60px] mb-12">Gallery</h2>
+          <h2 className="text-[40px] lg:text-[60px] mb-5">Gallery</h2>
 
           {/* Grid-style gallery thumbnails */}
           <div className="grid grid-cols-2 lg:grid-cols-5 gap-4 mb-12">
