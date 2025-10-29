@@ -291,9 +291,7 @@ export default function Home() {
                 Contact
               </a>
             </div>
-            <p className="font-mono">
-              2024 The Silver Clam. All rights reserved.
-            </p>
+            <p className="font-mono">The Silver Clam. All rights reserved.</p>
           </div>
         </div>
       </footer>
