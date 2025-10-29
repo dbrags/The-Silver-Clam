@@ -2,16 +2,34 @@
 
 :root {
   --background: #d0bfb0;
+  --foreground: #22211e;
 }
 
 @theme inline {
   --color-background: var(--background);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-foreground: var(--foreground);
+  --font-mono: var(--font-ibm-plex-mono);
+}
+
+@layer base {
+  :root {
+    --font-mono: var(--font-ibm-plex-mono), monospace;
+    --font-ivy: "ivypresto-display", serif;
+  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-ibm-plex-mono), monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-ivy);
+  letter-spacing: -2px;
 }
