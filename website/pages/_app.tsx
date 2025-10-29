@@ -1,8 +1,16 @@
-import "@/styles/globals.css";
-import "yet-another-react-lightbox/styles.css";
+import { AppProps } from "next/app";
+import { DefaultSeo } from "next-seo";
+import SEO from "../next-seo.config";
 
-import type { AppProps } from "next/app";
+import "../styles/globals.css";
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+function MyApp({ Component, pageProps }: AppProps) {
+  return (
+    <>
+      <DefaultSeo {...SEO} />
+      <Component {...pageProps} />
+    </>
+  );
 }
+
+export default MyApp;

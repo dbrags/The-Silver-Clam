@@ -10,20 +10,22 @@ const ibmPlexMono = IBM_Plex_Mono({
 
 const images = [
   { src: "/images/IMG_8701.jpg", alt: "Lake and dock view" },
-  { src: "/images/IMG_8701.jpg", alt: "Lake and dock view duplicate" },
-  { src: "/images/IMG_8710.jpg", alt: "Gallery 3" },
-  { src: "/images/gallery4.jpg", alt: "Gallery 4" },
-  { src: "/images/gallery5.jpg", alt: "Gallery 5" },
-  { src: "/images/gallery6.jpg", alt: "Gallery 6" },
-  { src: "/images/gallery7.jpg", alt: "Gallery 7" },
-  { src: "/images/gallery8.jpg", alt: "Gallery 8" },
-  { src: "/images/gallery9.jpg", alt: "Gallery 9" },
-  { src: "/images/gallery10.jpg", alt: "Gallery 10" },
-  { src: "/images/gallery11.jpg", alt: "Gallery 11" },
-  { src: "/images/gallery12.jpg", alt: "Gallery 12" },
-  { src: "/images/gallery13.jpg", alt: "Gallery 13" },
-  { src: "/images/gallery14.jpg", alt: "Gallery 14" },
-  { src: "/images/gallery15.jpg", alt: "Gallery 15" },
+  { src: "/images/IMG_8710.jpg", alt: "The Silver Clam house" },
+  { src: "/images/DSCF9107.jpg", alt: "Stairs up to the Silver Clam Cottage" },
+  { src: "/images/IMG_8343.jpg", alt: "Bunk beds" },
+  { src: "/images/IMG_8356.jpg", alt: "Shower and bathroom" },
+  { src: "/images/IMG_8395.jpg", alt: "Kitchen" },
+  { src: "/images/IMG_8457.jpg", alt: "Bedroom" },
+  { src: "/images/IMG_8473.jpg", alt: "Dining Area" },
+  { src: "/images/IMG_8529.jpg", alt: "Silver Clam Key" },
+  { src: "/images/IMG_8549.jpg", alt: "Couch" },
+  { src: "/images/IMG_8823.jpg", alt: "BBQ Area" },
+  { src: "/images/IMG_8838.jpg", alt: "Deck looking onto water" },
+  { src: "/images/IMG_9219.jpg", alt: "Fireplace" },
+  { src: "/images/IMG_9294.jpg", alt: "Fire Pit" },
+  { src: "/images/IMG_9281.jpg", alt: "Second Building at Silver Clam" },
+  { src: "/images/IMG_9259.jpg", alt: "Silver Clam Lounge Area" },
+  { src: "/images/IMG_9268.jpg", alt: "Silver Clam beds" },
 ];
 
 export default function Home() {
@@ -41,12 +43,35 @@ export default function Home() {
             height="93px"
           />
           <div className="hidden lg:flex gap-x-4 font-mono font-medium uppercase">
-            <a href="/">Instagram</a>
-            <a href="/about">AirBNB</a>
-            <a href="/gallery">Contact</a>
+            <a
+              className="hover:text-[#6B645A]"
+              href="https://instagram.com/thesilverclam"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Instagram
+            </a>
+            <a
+              className="hover:text-[#6B645A]"
+              href="https://airbnb.ca/h/thesilverclam"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              AirBNB
+            </a>
+            <a
+              className="hover:text-[#6B645A]"
+              href="mailto:thesilverclam@gmail.com"
+            >
+              Contact
+            </a>
           </div>
           <div className="flex lg:hidden gap-x-5 font-mono font-medium uppercase items-center">
-            <a href="/">
+            <a
+              href="https://instagram.com/thesilverclam"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <svg
                 width="20"
                 height="20"
@@ -60,7 +85,11 @@ export default function Home() {
                 />
               </svg>
             </a>
-            <a href="/about">
+            <a
+              href="https://airbnb.ca/h/thesilverclam"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <svg
                 width="18"
                 height="20"
@@ -76,7 +105,7 @@ export default function Home() {
                 />
               </svg>
             </a>
-            <a href="/gallery">
+            <a href="mailto:thesilverclam@gmail.com">
               <svg
                 width="23"
                 height="18"
@@ -102,7 +131,7 @@ export default function Home() {
               <h1 className="text-[50px] md:text-[80px] lg:text-[110px] xl:text-[122px] leading-[100%] mb-6">
                 Welcome to The Silver Clam
               </h1>
-              <p className="text-[15px] md:text-[16px] leading-[140%] max-w-[550px] font-mono tracking-tight">
+              <p className="text-[15px] md:text-[16px] mb-8 leading-[140%] max-w-[550px] font-mono tracking-tight">
                 There’s something special about waking up to the stillness of
                 the lake, coffee in hand, as the morning light dances on the
                 water. The Silver Clam is a place to slow down, breathe deeply,
@@ -110,6 +139,14 @@ export default function Home() {
                 gathering around the fire under a starry sky, or curling up by
                 the fireplace with a good movie after a day outdoors.
               </p>
+              <a
+                href="https://airbnb.ca/h/thesilverclam"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-mono font-medium cursor-pointer text-[18px] px-10 py-2 border rounded-full uppercase hover:bg-[#6B645A] hover:text-white hover:border-[#6B645A]"
+              >
+                Book Now
+              </a>
             </div>
             <img
               className="col-span-3 lg:col-span-2"
@@ -141,16 +178,16 @@ export default function Home() {
           <div className="flex flex-col-reverse lg:grid lg:grid-cols-6 gap-10 lg:gap-40">
             <img
               className="col-span-3"
-              src="/images/IMG_8701.jpg"
-              alt="Living room view at The Silver Clam"
+              src="/images/IMG_9219.jpg"
+              alt="Fireplace at The Silver Clam"
               width="100%"
               height="100%"
             />
             <div className="col-span-3 max-w-[820px]">
-              <div className="max-w-[320px] ml-auto mb-20">
+              <div className="max-w-[370px] ml-auto mb-20">
                 <img
                   className="col-span-2"
-                  src="/images/IMG_8710.jpg"
+                  src="/images/DSCF9107.jpg"
                   alt="The Silver Clam House"
                   width="100%"
                   height="100%"
@@ -178,7 +215,9 @@ export default function Home() {
                 ready to welcome you.
               </p>
               <a
-                href="/"
+                href="https://airbnb.ca/h/thesilverclam"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="font-mono font-medium cursor-pointer text-[18px] px-10 py-2 border rounded-full uppercase hover:bg-[#6B645A] hover:text-white hover:border-[#6B645A]"
               >
                 Book Now
@@ -229,9 +268,28 @@ export default function Home() {
           />
           <div>
             <div className="flex lg:justify-end gap-x-4 font-mono font-medium uppercase mb-4">
-              <a href="/">Instagram</a>
-              <a href="/about">AirBNB</a>
-              <a href="/gallery">Contact</a>
+              <a
+                className="hover:text-[#6B645A]"
+                href="https://instagram.com/thesilverclam"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Instagram
+              </a>
+              <a
+                className="hover:text-[#6B645A]"
+                href="https://airbnb.ca/h/thesilverclam"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                AirBNB
+              </a>
+              <a
+                className="hover:text-[#6B645A]"
+                href="mailto:thesilverclam@gmail.com"
+              >
+                Contact
+              </a>
             </div>
             <p className="font-mono">
               2024 The Silver Clam. All rights reserved.

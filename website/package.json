@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "next": "16.0.0",
+    "next-seo": "^6.8.0",
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "react-image-gallery": "^1.4.0",
